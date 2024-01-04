@@ -42,6 +42,9 @@ jobs:
           path: |
             release.zip
             !venv/
+      - name: Install pygame
+        run: |
+          pip install pygame
       - name: Run maintest.py
         run: |
           python maintest.py  # 執行你的主程式檔案
