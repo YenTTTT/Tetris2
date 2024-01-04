@@ -19,9 +19,6 @@ class Game:
         self.auto_rotato = False
         self.rotation_timer = pygame.time.get_ticks()  # 記錄上次旋轉的時間
         self.rotation_interval = 50  # 旋轉的間隔時間設置為 1000 毫秒
-        
-        pygame.mixer.music.load("Sounds/music.ogg")  #抓取音樂
-        pygame.mixer.music.play(-1)  #聲音會一直重複跑
 
     # 更新分數的方法，根據消除的行數給予相應的分數，並加上方塊向下移動的分數
     def update_score(self, lines_cleared):
